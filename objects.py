@@ -74,8 +74,8 @@ class I():
     status = "active"
     image = PhotoImage(file="C:/p/test/tetris/im/I/1.gif")
 
-    def __init__(self, parent, coordinate, cells, x=3, y=0):  # 3
-        self.parent = parent
+    def __init__(self, parent, coordinate, cells, x=3, y=0):
+        self.parent = parent  # canvas
         self.coordinate = coordinate  # coordinates
         self.cells = cells  # cells
         self.obj0 = Obj(self.parent, self.coordinate, self.cells, x, y, self.image)
