@@ -10,12 +10,12 @@ class Game_tetris():
         self.cells = self.create_game_cells()             # cells (true or false)
         self.cells2 = self.create_game_cells(n2=15)     # cells (true or false)
         self.im2 = None
-        self.im = self.random_obj()
+        self.im = self.random_obj()  # create first item
         self.canvas_.bind("<Right>", self.im.turn_right)
         self.canvas_.bind("<Left>", self.im.turn_left)
         self.canvas_.bind("<Up>", self.im.expand)
         self.canvas_.bind("<Down>", self.im.turn_both)
-        self.speed = 700
+        self.speed = 700  # game speed
         self.game_loop()
         self.imgl = []  # save img
         self.game_points = 0

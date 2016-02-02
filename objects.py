@@ -12,7 +12,7 @@ class Obj():
         self.cells = cells  # cells
         self.x = x
         self.y = y
-        self.image = PhotoImage(file="1.gif")
+        self.image = PhotoImage(file="block.gif")
         self.item_id = self.create_obj()
 
     def del_item(self):
@@ -72,7 +72,7 @@ class Obj():
 class I():
     orientation = "0"
     status = "active"
-    image = PhotoImage(file="C:/p/test/tetris/im/I/1.gif")
+    image = PhotoImage(file="block.gif")
 
     def __init__(self, parent, coordinate, cells, x=3, y=0):
         self.parent = parent  # canvas
